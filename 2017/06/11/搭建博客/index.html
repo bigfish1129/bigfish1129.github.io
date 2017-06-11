@@ -157,12 +157,12 @@
 <h3 id="1-2-创建仓库"><a href="#1-2-创建仓库" class="headerlink" title="1.2 创建仓库"></a>1.2 创建仓库</h3><p>然后需要创建一个仓库(repository) 来存储我们的网站，点击首页任意位置出现的 New repository按钮创建仓库, Respository name 中的username.github.io 的username 一定与前面的Owner 一致，记住你的username下面会用到。</p>
 <p>Create reponsitory<br>第一步就已经完成了，下面是安装。</p>
 <h2 id="2-安装"><a href="#2-安装" class="headerlink" title="2. 安装"></a>2. 安装</h2><p>Hexo 可以说是目前最流行的博客框架了，基于Nodejs，更多信息可以google，下面需要安装的工具包括 Git，Nodejs，Hexo。（Windows 用户自行搜索这些工具，直接安装即可，试过基本没啥问题）</p>
-<p>安装Git<br>我就想问问，还有谁没装Git么？</p>
+<h3 id="2-1-安装Git"><a href="#2-1-安装Git" class="headerlink" title="2.1 安装Git"></a>2.1 安装Git</h3><p>我就想问问，还有谁没装Git么？</p>
 <p> // 如果已安装HomeBrew 无需执行此行<br> $ /usr/bin/ruby -e “$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/master/install" target="_blank" rel="external">https://raw.githubusercontent.com/Homebrew/install/master/install</a>)”</p>
 <p> $ brew install git   // 安装Git<br>你也可以通过下载安装程序来安装</p>
-<p>安装Nodejs<br>先安装nvm，这是Nodejs版本管理器，可以轻松切换Nodejs版本。 这里有两种方式安装。如果使用curl的方式安装，安装完成之后一定要重启终端。</p>
-<h3 id="1-Homebrew-安装方式，此安装方式无需重启"><a href="#1-Homebrew-安装方式，此安装方式无需重启" class="headerlink" title="1. Homebrew 安装方式，此安装方式无需重启"></a>1. Homebrew 安装方式，此安装方式无需重启</h3><p> $ brew install nvm<br> $ mkdir ~/.nvm<br> $ export NVM_DIR=~/.nvm<br> $ . $(brew –prefix nvm)/nvm.sh</p>
-<h3 id="2-curl安装方式"><a href="#2-curl安装方式" class="headerlink" title="2. curl安装方式"></a>2. curl安装方式</h3><p> $ curl <a href="https://raw.github.com/creationix/nvm/master/install.sh" target="_blank" rel="external">https://raw.github.com/creationix/nvm/master/install.sh</a> | sh<br>安装完成后，重启终端 并执行下列命令即可安装 Node.js。</p>
+<h3 id="2-2-安装Nodejs"><a href="#2-2-安装Nodejs" class="headerlink" title="2.2 安装Nodejs"></a>2.2 安装Nodejs</h3><p>先安装nvm，这是Nodejs版本管理器，可以轻松切换Nodejs版本。 这里有两种方式安装。如果使用curl的方式安装，安装完成之后一定要重启终端。</p>
+<h3 id="2-3-Homebrew-安装方式，此安装方式无需重启"><a href="#2-3-Homebrew-安装方式，此安装方式无需重启" class="headerlink" title="2.3 Homebrew 安装方式，此安装方式无需重启"></a>2.3 Homebrew 安装方式，此安装方式无需重启</h3><p> $ brew install nvm<br> $ mkdir ~/.nvm<br> $ export NVM_DIR=~/.nvm<br> $ . $(brew –prefix nvm)/nvm.sh</p>
+<h3 id="2-4-curl安装方式"><a href="#2-4-curl安装方式" class="headerlink" title="2.4 curl安装方式"></a>2.4 curl安装方式</h3><p> $ curl <a href="https://raw.github.com/creationix/nvm/master/install.sh" target="_blank" rel="external">https://raw.github.com/creationix/nvm/master/install.sh</a> | sh<br>安装完成后，重启终端 并执行下列命令即可安装 Node.js。</p>
 <p> $ nvm install 4<br>安装Hexo<br>以上所有都安装完成之后再安装Hexo<br> $ sudo npm install hexo-cli -g<br>所有必须工具已经安装完成，下面我们就可以生成博客，上传至我们的Github 仓库了。</p>
 <h2 id="3-编写，发布"><a href="#3-编写，发布" class="headerlink" title="3. 编写，发布"></a>3. 编写，发布</h2><p>接下来我们需要用Hexo初始化一个博客，然后更改一些自定义的配置，或者加上自己喜欢的主题，写上第一篇文章，然后发布到自己的个人Github网站(username.github.io)。</p>
 <p>创建博客<br>将下面的 username 替换成你自己的username(其实也无所谓，作者强迫症)，执行成功后，会创建出一个名为 username.github.io 的文件夹。</p>
